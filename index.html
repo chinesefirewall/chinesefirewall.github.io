@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Testing Page</title>
+    <title>Niyi Solomon Adebayo - Personal Website</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-48B50EP0ZF"></script>
@@ -14,32 +14,289 @@
 
       gtag('config', 'G-48B50EP0ZF');
     </script>
+
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: #35424a;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0e76a8 3px solid;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header a:hover {
+            color: #0e76a8;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px 0;
+            margin: 20px 0;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #35424a;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        section p, section ul {
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Experience and Education Items */
+        .item {
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+
+        .item h3 {
+            color: #0e76a8;
+        }
+
+        .item p {
+            padding: 0;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .skill {
+            background: #0e76a8;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Contact */
+        .contact-info {
+            padding: 0 20px;
+        }
+
+        .contact-info p {
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header {
+                padding-bottom: 20px;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Niyi's Personal Testing Page</h1>
+        <div class="container">
+            <div id="branding">
+                <h1>Niyi Solomon Adebayo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a simple testing page created for personal use. It includes Google Analytics tracking.</p>
-        </section>
+    <div class="container">
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome to my personal website. I am Niyi Solomon Adebayo, a professional with expertise in [Your Field]. I am passionate about [Your Interests] and dedicated to [Your Goals].</p>
+                <p>This section provides an overview of who I am, my background, and what drives me professionally and personally.</p>
+            </section>
 
-        <section>
-            <h2>Test Section</h2>
-            <p>This section can be used for testing various HTML, CSS, and JavaScript features.</p>
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                <div class="item">
+                    <h3>Job Title - Company Name</h3>
+                    <p><em>Month Year - Present</em></p>
+                    <ul>
+                        <li>Responsibility or achievement 1</li>
+                        <li>Responsibility or achievement 2</li>
+                        <li>Responsibility or achievement 3</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Previous Job Title - Previous Company</h3>
+                    <p><em>Month Year - Month Year</em></p>
+                    <ul>
+                        <li>Responsibility or achievement 1</li>
+                        <li>Responsibility or achievement 2</li>
+                        <li>Responsibility or achievement 3</li>
+                    </ul>
+                </div>
+            </section>
 
-            <!-- ✅ GA4 Custom Event Button -->
-            <button onclick="gtag('event', 'button_click', {
-                'event_category': 'test',
-                'event_label': 'Test Button'
-            })">Click Me (Trackable)</button>
-        </section>
-    </main>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>Degree Name - University Name</h3>
+                    <p><em>Year - Year</em></p>
+                    <p>Brief description of your studies, achievements, or relevant coursework.</p>
+                </div>
+                <div class="item">
+                    <h3>Previous Degree - Previous University</h3>
+                    <p><em>Year - Year</em></p>
+                    <p>Brief description of your studies, achievements, or relevant coursework.</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill">Skill 1</div>
+                    <div class="skill">Skill 2</div>
+                    <div class="skill">Skill 3</div>
+                    <div class="skill">Skill 4</div>
+                    <div class="skill">Skill 5</div>
+                    <div class="skill">Skill 6</div>
+                    <div class="skill">Skill 7</div>
+                    <div class="skill">Skill 8</div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="item">
+                    <h3>Project Name 1</h3>
+                    <p>Description of the project, technologies used, and your role in it.</p>
+                </div>
+                <div class="item">
+                    <h3>Project Name 2</h3>
+                    <p>Description of the project, technologies used, and your role in it.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> your.email@example.com</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Location:</strong> City, Country</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Google Analytics Event Tracking -->
+            <section>
+                <h2>Interaction</h2>
+                <p>Click the button below to track an event in Google Analytics.</p>
+                <button onclick="gtag('event', 'button_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'Profile Interaction'
+                })">Track Interaction</button>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Personal Testing Page</p>
+        <p>&copy; 2025 Niyi Solomon Adebayo - Personal Website</p>
     </footer>
 </body>
 </html>
