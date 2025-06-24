@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niyi Solomon Adebayo - Personal Website</title>
 
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-48B50EP0ZF"></script>
     <script>
@@ -15,200 +21,45 @@
       gtag('config', 'G-48B50EP0ZF');
     </script>
 
-    <style>
-        /* Basic CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        /* Header Styles */
-        header {
-            background: #35424a;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0e76a8 3px solid;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            display: inline;
-            padding: 0 20px;
-        }
-
-        header #branding {
-            float: left;
-        }
-
-        header #branding h1 {
-            margin: 0;
-        }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header a:hover {
-            color: #0e76a8;
-            font-weight: bold;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 20px 0;
-            margin: 20px 0;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #35424a;
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-
-        section p, section ul {
-            padding: 0 20px;
-            margin-bottom: 10px;
-        }
-
-        /* Experience and Education Items */
-        .item {
-            margin-bottom: 20px;
-            padding: 0 20px;
-        }
-
-        .item h3 {
-            color: #0e76a8;
-        }
-
-        .item p {
-            padding: 0;
-        }
-
-        /* Skills */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 20px;
-        }
-
-        .skill {
-            background: #0e76a8;
-            color: white;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        /* Contact */
-        .contact-info {
-            padding: 0 20px;
-        }
-
-        .contact-info p, .social-icons ul {
-            margin: 5px 0;
-        }
-
-        .social-icons ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .social-icons li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .contact-info p {
-            padding: 0;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background: #35424a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        /* Social Media Icons */
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        /* Responsive Design */
-        @media(max-width: 768px) {
-            header #branding,
-            header nav,
-            header nav li {
-                float: none;
-                text-align: center;
-                width: 100%;
-            }
-
-            header {
-                padding-bottom: 20px;
-            }
-
-            .container {
-                width: 95%;
-            }
-        }
-    </style>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+
     <header>
         <div class="container">
             <div id="branding">
                 <h1>Niyi Solomon Adebayo</h1>
             </div>
-            <nav>
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" aria-label="About section">About</a></li>
+                    <li><a href="#experience" aria-label="Experience section">Experience</a></li>
+                    <li><a href="#education" aria-label="Education section">Education</a></li>
+                    <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+                    <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+                    <li><a href="#certifications" aria-label="Certifications section">Certifications</a></li>
+                    <li><a href="#testimonials" aria-label="Testimonials section">Testimonials</a></li>
+                    <li><a href="#contact" aria-label="Contact section">Contact</a></li>
                 </ul>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox" aria-label="Toggle dark mode">
+                        <input type="checkbox" id="checkbox" role="switch" aria-checked="false" aria-label="Dark mode toggle" />
+                        <div class="slider round">
+                            <div class="slider-icons">
+                                <i class="fas fa-sun" aria-hidden="true"></i>
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
             </nav>
         </div>
     </header>
@@ -217,7 +68,8 @@
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p>Welcome to my personal website. I am Niyi Solomon Adebayo, a professional with expertise in Data engineering. I am passionate about Big Data and dedicated to adding real value in the pursuit of competence.</p>
+                <p>Welcome to my personal website. I am Niyi Solomon Adebayo, a professional with expertise in <span id="typed-text"></span></p>
+                <p>I am passionate about Big Data and dedicated to adding real value in the pursuit of competence.</p>
                 <p>This section provides an overview of who I am, my background, and what drives me professionally and personally.</p>
             </section>
 
@@ -262,14 +114,90 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skills">
-                    <div class="skill">Solution Architecture</div>
-                    <div class="skill">Database administration</div>
-                    <div class="skill">ELT</div>
-                    <div class="skill">Data pipeline orchestration</div>
-                    <div class="skill">Data analysis and reporting</div>
-                    <div class="skill">Data modelling</div>
-                    <div class="skill">Cloud computing</div>
-                    <div class="skill">Docker and Kubernetes</div>
+                    <div class="skill-item" data-skill="Solution Architecture" data-percent="90">
+                        <div class="skill-name">
+                            <span>Solution Architecture</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Database administration" data-percent="85">
+                        <div class="skill-name">
+                            <span>Database administration</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-skill="Big Data Analytics" data-percent="85">
+                        <div class="skill-name">
+                            <span>Big Data Analytics</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 85%"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item" data-skill="ELT" data-percent="95">
+                        <div class="skill-name">
+                            <span>ELT</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Data pipeline orchestration" data-percent="88">
+                        <div class="skill-name">
+                            <span>Data pipeline orchestration</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Data analysis and reporting" data-percent="80">
+                        <div class="skill-name">
+                            <span>Data analysis and reporting</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Data modelling" data-percent="85">
+                        <div class="skill-name">
+                            <span>Data modelling</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Cloud computing" data-percent="92">
+                        <div class="skill-name">
+                            <span>Cloud computing</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Docker and Kubernetes" data-percent="78">
+                        <div class="skill-name">
+                            <span>Docker and Kubernetes</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--percent: 78%"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -286,22 +214,101 @@
                 </div>
             </section>
 
-            <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:adebayoniyi2000@yahoo.com">adebayoniyi2000@yahoo.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+37256773540">(+372) 5677-3540</a></p>
-        <p><strong>Location:</strong> Tallinn, Estonia</p>
-    </div>
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <div class="certifications-container">
 
-    <div class="social-icons">
-        <p><strong>Find me on:</strong></p>
-        <ul>
-            <li><a href="https://linkedin.com/in/niyi-adebayo-b45497a4/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/chinesefirewall" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com/niyiadebayo" target="_blank">Twitter</a></li>
-        </ul>
-    </div>
+
+                    </div>
+
+                    <div class="certification-item">
+                        <div class="certification-logo">
+                            <a href="https://www.credly.com/users/niyisolomonadebayo" target="_blank">
+                                <img src="https://img.icons8.com/?size=64&id=Ylgapg1dD6gn&format=png" alt="Credly Logo">
+                            </a>
+                        </div>
+                        <div class="certification-details">
+                            <h3>View All My Certifications</h3>
+                            <p>Credly</p>
+                            <p>Click on the Credly logo to view all my verified certifications and badges.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-carousel">
+                        <div class="testimonial active">
+                            <div class="testimonial-content">
+                                <p>"I had the pleasure of working together with Niyi when collaborating with Remobi. Beyond his technical expertise, his collaborative spirit and ability to simplify complex ideas were outstanding. I know him to be an invaluable team player with a keen eye for detail."</p>
+                                <div class="testimonial-author">
+                                    <h4>Gabor Forgacs</h4>
+                                    <p>Senior Software Engineer, Siemens Technology</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-image">
+                                <img src="Gabor_Forgacs.png" alt="LinkedIn recommendation screenshot">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <p>"I am pleased to write this recommendation for Niyi, who has been a really good data and Python engineer on my team. In the time we've worked together, Niyi has consistently demonstrated a good level of expertise and dedication in his role.
+One of Niyi's standout qualities is his commitment to quality and attention to detail. Moreover, Niyi is a highly collaborative team member and a quick learner. He readily embraced new technologies and tools, staying up-to-date with the latest advancements in data engineering.
+Overall, I wholeheartedly recommend Niyi for any data and Python engineering role. Good luck Niyi!"</p>
+                                <div class="testimonial-author">
+                                    <h4>Daniel Macovei</h4>
+                                    <p>Engineering Manager, Siemens Technology</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-image">
+                                <img src="Daniel_Macovei.png" alt="LinkedIn recommendation screenshot">
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <p>"Niyi's expertise in cloud computing and data architecture helped us modernize our entire data infrastructure."</p>
+                                <div class="testimonial-author">
+                                    <h4>Peter Baroš</h4>
+                                    <p>Tech Community manager, Remobi</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-image">
+                                <img src="Peter_Baros.png" alt="LinkedIn recommendation screenshot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls" role="group" aria-label="Testimonial carousel controls">
+                        <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                        <div class="carousel-indicators" role="tablist" aria-label="Testimonial indicators">
+                            <span class="indicator active" data-index="0" role="tab" aria-selected="true" aria-label="Testimonial 1" tabindex="0"></span>
+                            <span class="indicator" data-index="1" role="tab" aria-selected="false" aria-label="Testimonial 2" tabindex="0"></span>
+                            <span class="indicator" data-index="2" role="tab" aria-selected="false" aria-label="Testimonial 3" tabindex="0"></span>
+                        </div>
+                        <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:adebayoniyi2000@yahoo.com">adebayoniyi2000@yahoo.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+37256773540">(+372) 5677-3540</a></p>
+                    <p><strong>Location:</strong> Tallinn, Estonia</p>
+                </div>
+
+                <div class="social-icons">
+                    <p><strong>Find me on:</strong></p>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/niyi-adebayo-b45497a4/" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/chinesefirewall" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
+                        <li><a href="https://twitter.com/Niyi_Nash" target="_blank"><i class="fab fa-x-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">X (formerly Twitter)</span></a></li>
+                        <li><a href="https://www.strava.com/athletes/154896995" target="_blank"><i class="fab fa-strava fa-2x" aria-hidden="true"></i><span class="sr-only">Strava</span></a></li>
+                        <li><a href="https://connect.garmin.com/modern/profile/17fb5266-803a-4523-97fe-16f2e5bbac82" target="_blank"><i class="fas fa-heartbeat fa-2x" aria-hidden="true"></i><span class="sr-only">Garmin Connect</span></a></li>
+                    </ul>
+                </div>
             </section>
 
             <!-- Google Analytics Event Tracking -->
@@ -319,5 +326,8 @@
     <footer>
         <p>&copy; 2025 Niyi Solomon Adebayo - Personal Website</p>
     </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
