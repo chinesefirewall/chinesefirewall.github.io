@@ -29,6 +29,12 @@
         <section>
             <h2>Test Section</h2>
             <p>This section can be used for testing various HTML, CSS, and JavaScript features.</p>
+
+            <!-- ✅ GA4 Custom Event Button -->
+            <button onclick="gtag('event', 'button_click', {
+                'event_category': 'test',
+                'event_label': 'Test Button'
+            })">Click Me (Trackable)</button>
         </section>
     </main>
 
